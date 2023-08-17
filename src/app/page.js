@@ -1,5 +1,5 @@
 "use client";
-import Menu from "@/components/Menu";
+// import Menu from "@/components/Menu";
 import {useRouter} from "next/navigation";
 const Page = () => {
   const router = useRouter();
@@ -8,7 +8,6 @@ const Page = () => {
   };
   return (
     <div>
-      <Menu />
       <h1> This is Home</h1>
       <button onClick={GoTo}>Click</button>
     </div>

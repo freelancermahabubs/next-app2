@@ -1,11 +1,16 @@
-import Menu from "@/components/Menu";
-import React from "react";
+async function getData() {
+  const res = await fetch("https://jsonplaceholder.typicode.com/users");
+  const data = await res.json();
+  return data;
+}
 
-const Page = () => {
+const Page = async () => {
+  const data = await getData();
   return (
     <div>
-      <Menu />
       <h1>This is Profile Page</h1>
+      <>{props.name.stringify}</>
+      <h1>{JSON.stringify(data)}</h1>
     </div>
   );
 };
