@@ -4,3 +4,8 @@
 .pending-link {
   color: green !important;
 }
+
+.my_text {
+  font-family: var(--font-siliguri);
+}
+
